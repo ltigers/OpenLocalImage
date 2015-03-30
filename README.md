@@ -1,2 +1,3 @@
 # OpenLocalImage
-学习例子，
+学习例子，包括用CursorLoader与SimpleCursorAdapter结合加载本地照片
+还有模仿微店的界面
