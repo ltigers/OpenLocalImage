@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/default_bg">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:background="@drawable/tv_login_shape"
+        android:text="用户登录"
+        android:textSize="30sp"
+        android:id="@+id/tv_login_title"/>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <EditText android:id="@+id/login_edit_account"
+            android:background="@drawable/qq_edit_login"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginBottom="5.0px"
+            android:hint="请输入账号"
+            android:maxLength="10"
+            android:layout_alignParentTop="true"
+             />
+        <TextView
+            android:textSize="16.0dip"
+            android:textColor="#ff3f3f3f"
+            android:gravity="center_vertical"
+            android:id="@+id/TextView01"
+            android:paddingLeft="7.0sp"
+            android:text="账号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15.0sp"
+            android:layout_alignLeft="@+id/login_edit_account"
+            android:layout_alignTop="@+id/login_edit_account"
+            android:layout_alignBottom="@+id/login_edit_account" />
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            android:background="@drawable/qq_edit_login"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1.0dip"
+            android:maxLength="16"
+            android:hint="请输入密码"
+            android:layout_below="@+id/login_edit_account"
+            android:layout_alignLeft="@+id/login_edit_account"
+            android:layout_alignRight="@+id/login_edit_account"
+            android:inputType="textPassword" />
+        <TextView android:textSize="16.0dip"
+            android:textColor="#ff3f3f3f"
+            android:gravity="center_vertical"
+            android:id="@+id/TextView02"
+            android:paddingLeft="7.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:layout_alignTop="@+id/login_edit_pwd"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignBottom="@+id/login_edit_pwd" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/login_edit_pwd"
+            android:layout_alignLeft="@id/login_edit_pwd"
+            android:id="@+id/login_btn"
+            android:background="@drawable/btn_selector"
+
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:background="@drawable/btn_selector"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/login_edit_pwd"
+            android:layout_alignRight="@id/login_edit_pwd"
+            android:id="@+id/login_reg"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

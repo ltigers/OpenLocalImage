@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">微店</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="server_url">http://www.cntysoft.com/updateinfo.html</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_detail_infomation">DetailInfomationActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="exitLogin">退出登录</string>
+    <string name="ReclickExit">再按一次退出程序</string>
+</resources>

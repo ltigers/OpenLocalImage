@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/info_item_title"
+        android:text="标题"
+        android:textSize="16sp"
+        android:textColor="#AA000000"
+        android:paddingTop="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_item_time"
+        android:textColor="#55000000"
+        android:text="时间"
+        android:paddingTop="5dp"
+        android:paddingBottom="12dp"/>
+
+</LinearLayout>

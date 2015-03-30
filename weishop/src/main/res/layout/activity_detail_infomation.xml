@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tiger="http://schemas.android.com/apk/res/com.cntysoft.weishop"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailInfomationActivity"
+    android:background="#FFFFFF">
+
+    <com.cntysoft.weishop.ui.CommonNavView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tiger:navTitle="消息中心"
+        android:id="@+id/info_rl">
+
+        </com.cntysoft.weishop.ui.CommonNavView>
+    <WebView
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_rl"
+        android:id="@+id/detail_web"></WebView>
+
+</RelativeLayout>

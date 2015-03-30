@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="CommonNavView">
+        <attr name="navTitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CommonSettingView">
+        <attr name="settingTitle" format="string"/>
+        <attr name="settingName" format="string" />
+        <attr name="settingVisible" format="string"/>
+    </declare-styleable>
+</resources>
