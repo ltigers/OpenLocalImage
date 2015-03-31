@@ -12,4 +12,7 @@
     <string name="title_activity_setting">SettingActivity</string>
     <string name="exitLogin">退出登录</string>
     <string name="ReclickExit">再按一次退出程序</string>
+    <string name="exit_message">你确定要退出吗</string>
+    <string name="exit_ok">退出</string>
+    <string name="exit_cancle">取消</string>
 </resources>

@@ -3,6 +3,7 @@ package com.cntysoft.weishop;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,10 +15,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.cntysoft.weishop.adapter.ImageAdapter;
 import com.cntysoft.weishop.adapter.MyViewPagerAdapter;
+import com.cntysoft.weishop.ui.BadgeView;
+import com.cntysoft.weishop.ui.IconNumberView;
 import com.cntysoft.weishop.utils.CommonUtils;
 
 import java.util.ArrayList;
@@ -41,6 +45,7 @@ public class HomeActivity extends Activity implements View.OnClickListener{
     private ImageView imageViewPointer;
     private ImageView imageViewLeftBottom;
     private ImageView imageViewRightBottom;
+    private BadgeView badgeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +60,10 @@ public class HomeActivity extends Activity implements View.OnClickListener{
         imageViewRight = (ImageView) findViewById(R.id.iv_right);
         imageViewPointer = (ImageView) findViewById(R.id.iv_pointer);
         imageViewLeftBottom = (ImageView) findViewById(R.id.iv_left_bottom);
+        badgeView = new BadgeView(this,imageViewLeftBottom);
+        badgeView.setText("4");
+        badgeView.setTextSize(CommonUtils.dip2px(this,6));
+        badgeView.show();
         imageViewRightBottom = (ImageView) findViewById(R.id.iv_right_bottom);
         imageViewLeft.setAlpha(0);
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -136,6 +145,12 @@ public class HomeActivity extends Activity implements View.OnClickListener{
                     Log.i(TAG,"gridview is click" + j.intValue());
                     if (0 == j.intValue()){
                         Log.i(TAG,"first gridview  "+ i);
+                        if(i == 5){
+                           IconNumberView iconNumberView = (IconNumberView)((RelativeLayout)view).getChildAt(0);
+                           iconNumberView.setImageBitmap(BitmapFactory.decodeResource(getResources(),imageArray[i]));
+                           iconNumberView.setNumber("0");
+                           //imageAdapter.notifyDataSetChanged();
+                        }
                     }else if(j.intValue()==1){
                         Log.i(TAG,"second gridview  "+ i);
                     }
@@ -163,6 +178,8 @@ public class HomeActivity extends Activity implements View.OnClickListener{
                 viewPager.setCurrentItem((mCurrentItem == itemCount -1 )? (itemCount -1):(mCurrentItem + 1 ));
                 break;
             case R.id.iv_left_bottom:
+                badgeView.setText("0");
+                badgeView.hide();
                 Intent intent = new Intent(HomeActivity.this,InformationActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.pull_right_in,R.anim.out);

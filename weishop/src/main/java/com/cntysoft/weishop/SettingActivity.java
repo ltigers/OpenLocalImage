@@ -44,15 +44,15 @@ public class SettingActivity extends ActionBarActivity implements View.OnClickLi
                 break;
             case R.id.setting_exit:
                 AlertDialog.Builder builder = new AlertDialog.Builder(SettingActivity.this);
-                builder.setMessage("你确定要退出吗");
-                builder.setPositiveButton("退出",new DialogInterface.OnClickListener() {
+                builder.setMessage(getString(R.string.exit_message));
+                builder.setPositiveButton(getString(R.string.exit_ok),new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         //android.os.Process.killProcess(android.os.Process.myPid());
                         ExitApplication.newInstance().exit();
                     }
                 });
-                builder.setNegativeButton("取消",new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getString(R.string.exit_cancle),new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
