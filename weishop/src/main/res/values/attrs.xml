@@ -8,4 +8,10 @@
         <attr name="settingName" format="string" />
         <attr name="settingVisible" format="string"/>
     </declare-styleable>
+    <declare-styleable name="CommonPriceView">
+        <attr name="priceTitle" format="string"/>
+        <!--<attr name="android:background" />-->
+        <attr name="priceNum" format="string" />
+        <attr name="pricetextSize" format="dimension" />
+    </declare-styleable>
 </resources>

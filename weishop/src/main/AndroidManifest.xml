@@ -40,6 +40,10 @@
             android:name=".SettingActivity"
             android:label="@string/title_activity_setting" >
         </activity>
+        <activity
+            android:name=".IncomeActivity"
+            android:label="@string/title_activity_income" >
+        </activity>
     </application>
 
 </manifest>

@@ -150,6 +150,9 @@ public class HomeActivity extends Activity implements View.OnClickListener{
                            iconNumberView.setImageBitmap(BitmapFactory.decodeResource(getResources(),imageArray[i]));
                            iconNumberView.setNumber("0");
                            //imageAdapter.notifyDataSetChanged();
+                            Intent intent = new Intent(HomeActivity.this,IncomeActivity.class);
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.pull_right_in,R.anim.out);
                         }
                     }else if(j.intValue()==1){
                         Log.i(TAG,"second gridview  "+ i);

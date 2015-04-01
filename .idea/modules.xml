@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/LocalImage/LocalImage.iml" filepath="$PROJECT_DIR$/LocalImage/LocalImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/OpenLocalImage.iml" filepath="$PROJECT_DIR$/OpenLocalImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/horizontalscrollviewdemo/horizontalscrollviewdemo.iml" filepath="$PROJECT_DIR$/horizontalscrollviewdemo/horizontalscrollviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/weishop/weishop.iml" filepath="$PROJECT_DIR$/weishop/weishop.iml" />
     </modules>
   </component>
