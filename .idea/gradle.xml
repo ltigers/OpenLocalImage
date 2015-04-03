@@ -12,6 +12,9 @@
             <option value="$PROJECT_DIR$/LocalImage" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/horizontalscrollviewdemo" />
+            <option value="$PROJECT_DIR$/pulltorefresh" />
+            <option value="$PROJECT_DIR$/sortlistview" />
+            <option value="$PROJECT_DIR$/textwebview" />
             <option value="$PROJECT_DIR$/weishop" />
           </set>
         </option>
