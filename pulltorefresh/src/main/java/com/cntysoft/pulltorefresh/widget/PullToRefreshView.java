@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -181,6 +182,7 @@ public class PullToRefreshView extends LinearLayout implements View.OnTouchListe
      */
     private boolean ableToPull;
 
+    private static final String TAG = "PullToRefreshView";
     private void initViews(Context context){
         preferences = context.getSharedPreferences("config",Context.MODE_PRIVATE);
         header = LayoutInflater.from(context).inflate(R.layout.pull_to_refresh,null,true);
@@ -206,10 +208,11 @@ public class PullToRefreshView extends LinearLayout implements View.OnTouchListe
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
         if(changed && !loadOnce){
-            hideHeaderHeight = header.getHeight();
+            hideHeaderHeight = -header.getHeight();
+            Log.i(TAG,hideHeaderHeight + "");
             headerLayoutParams = (MarginLayoutParams) header.getLayoutParams();
-            headerLayoutParams.topMargin = -hideHeaderHeight;
-            header.setLayoutParams(headerLayoutParams);
+            headerLayoutParams.topMargin = hideHeaderHeight;
+            //header.setLayoutParams(headerLayoutParams);
             listView = (ListView) getChildAt(1);
             listView.setOnTouchListener(this);
             loadOnce = true;
@@ -227,6 +230,7 @@ public class PullToRefreshView extends LinearLayout implements View.OnTouchListe
                 case MotionEvent.ACTION_MOVE:
                     float yMove = event.getRawY();
                     int distance = (int)(yMove - yDown);
+                    Log.i(TAG,"distance:  "+distance);
                     // 如果手指是下滑状态，并且下拉头是完全隐藏的，就屏蔽下拉事件
                     if (distance <= 0 && headerLayoutParams.topMargin <= hideHeaderHeight) {
                         return false;
@@ -234,6 +238,7 @@ public class PullToRefreshView extends LinearLayout implements View.OnTouchListe
                     if (distance < touchSlop) {
                         return false;
                     }
+                    Log.i(TAG,"TopMargin:  "+ headerLayoutParams.topMargin);
                     if (currentStatus != STATUS_REFRESHING) {
                         if(headerLayoutParams.topMargin > 0){
                             currentStatus = STATUS_RELEASE_TO_REFRESH;
@@ -426,7 +431,7 @@ public class PullToRefreshView extends LinearLayout implements View.OnTouchListe
                 sleep(10);
             }
             currentStatus = STATUS_REFRESHING;
-            publishProgress(0);
+            publishProgress(topMargin);
             if (mListener != null) {
                 mListener.onRefresh();
             }
