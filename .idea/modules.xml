@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/sortlistview/sortlistview.iml" filepath="$PROJECT_DIR$/sortlistview/sortlistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/textwebview/textwebview.iml" filepath="$PROJECT_DIR$/textwebview/textwebview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/togglebtn/togglebtn.iml" filepath="$PROJECT_DIR$/togglebtn/togglebtn.iml" />
       <module fileurl="file://$PROJECT_DIR$/weishop/weishop.iml" filepath="$PROJECT_DIR$/weishop/weishop.iml" />
     </modules>
   </component>
