@@ -1,1 +1,1 @@
-include ':app', ':LocalImage', ':LoaderLocalImage', ':weishop', ':horizontalscrollviewdemo', ':sortlistview', ':textwebview', ':pulltorefresh', ':togglebtn'
+include ':app', ':LocalImage', ':LoaderLocalImage', ':weishop', ':horizontalscrollviewdemo', ':sortlistview', ':textwebview', ':pulltorefresh', ':togglebtn', ':locationaddress'
