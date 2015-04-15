@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider_low_gray"
+        android:visibility="gone"
+        android:id="@+id/catalog_divider1"/>
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="19.8dp"
+        android:background="#ffe6e6e6"
+        android:paddingLeft="5dp"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:textColor="@color/house_green"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider_low_gray"
+        android:visibility="gone"
+        android:id="@+id/catalog_divider"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:id="@+id/title_divider"
+        android:background="@color/divider_low_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+       />
+
+</LinearLayout>

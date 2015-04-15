@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fake_white">#fffafafa</color>
+    <color name="g_dark_grey">#ff404040</color>
+    <color name="g_green">#ff55bb22</color>
+    <color name="high_gray">#ff404040</color>
+    <color name="dark_gray1">#ff404040</color>
+    <color name="medium_gray">#ff808080</color>
+    <color name="low_gray">#ffbfbfbf</color>
+    <color name="divider_low_gray">#ffbfbfbf</color>
+    <color name="sub_gray">#ffe6e6e6</color>
+    <color name="super_sub_gray">#ffeae8e8</color>
+    <color name="house_green">#ff56ba21</color>
+    <color name="g_grey">#ff808080</color>
+    <color name="g_deep_green">#ff3e9317</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+</resources>
