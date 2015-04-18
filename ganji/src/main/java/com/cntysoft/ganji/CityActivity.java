@@ -97,6 +97,7 @@ public class CityActivity extends Activity {
                     
                     Intent intent = new Intent(CityActivity.this,HomeActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

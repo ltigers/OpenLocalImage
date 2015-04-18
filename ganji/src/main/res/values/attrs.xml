@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PersonCommonView">
+        <attr name="src" format="reference" />
+        <attr name="titleText" format="string"/>
+        <!-- 0:Visiable 4:Invisiable 8:gone-->
+        <attr name="dividerVisiable" format="integer"/>
+        <attr name="topdividerVisiable" format="integer"/>
+        <attr name="bottomdividerVisiable" format="integer"/>
+    </declare-styleable>
+</resources>

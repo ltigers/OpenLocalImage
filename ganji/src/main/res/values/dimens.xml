@@ -6,4 +6,8 @@
     <dimen name="titlebar_hight">48.0dip</dimen>
     <dimen name="g_text_size_large">16.0dip</dimen>
     <dimen name="g_widget_margin">8.0dip</dimen>
+    <dimen name="g_widget_margin_2x">16.0dip</dimen>
+    <dimen name="g_text_size_small">12.0dip</dimen>
+    <dimen name="g_item_height_small">46.0dip</dimen>
+ 
 </resources>

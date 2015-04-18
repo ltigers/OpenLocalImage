@@ -99,7 +99,7 @@ public class VerticalSlideView extends FrameLayout implements View.OnClickListen
     private long lastUpdateTime;
     private int headHeight;
     private boolean loadOnce = false;
-    //private int touchSlop;
+    private int touchSlop;
     private boolean ablePull = false;
     
     private int mFirstViewHeight;
@@ -149,7 +149,7 @@ public class VerticalSlideView extends FrameLayout implements View.OnClickListen
         measureView(mFirstView);
         mFirstViewHeight = mFirstView.getMeasuredHeight();
         addView(mFirstView,0);
-        //touchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
+        touchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
     }
 
     private void measureView(View view){
@@ -207,6 +207,7 @@ public class VerticalSlideView extends FrameLayout implements View.OnClickListen
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         boolean result = false;
         Log.i(TAG,"isShown:"+isShown);
+        Log.i(TAG,"touchSlop" +touchSlop);
         switch (ev.getAction()){
             case MotionEvent.ACTION_DOWN:
                 mStartY = (int)ev.getRawY();
@@ -216,7 +217,7 @@ public class VerticalSlideView extends FrameLayout implements View.OnClickListen
 
                 int dis = moveY - mStartY;
                 if(!isShown){
-                    if(dis < 0){
+                    if(dis < 0 || dis < touchSlop){
                         result = false;
                     }else{
                         if(mSecondView.getScrollY() == 0){

@@ -15,4 +15,8 @@
     <color name="g_deep_green">#ff3e9317</color>
     <color name="transparent">#00000000</color>
     <color name="white">#ffffffff</color>
+    <color name="card_fake_white">#fff0f0f0</color>
+    <color name="black_gray">#ff404040</color>
+    <color name="login_name_color">#ff3e690f</color>
+    <color name="personal_centre_item">#fff0f0f0</color>
 </resources>

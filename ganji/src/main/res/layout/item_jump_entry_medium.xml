@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:id="@+id/jump_entry" 
+    android:background="@drawable/bg_white_turn_grey"
+    android:layout_width="100.0dip"
+    android:layout_height="100.0dip"
+    android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:gravity="center" 
+        android:orientation="vertical" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView 
+            android:id="@+id/entry_icon" 
+            android:layout_width="37.299988dip"
+            android:layout_height="37.299988dip"
+            android:scaleType="fitXY" />
+        <TextView 
+            android:textSize="@dimen/g_text_size_medium"
+            android:textColor="@color/g_grey" 
+            android:id="@+id/entry_name"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip" 
+            android:text="房产" 
+            android:singleLine="true" />
+    </LinearLayout>
+   <!-- <TextView 
+        android:textSize="12.0dip"
+        android:textColor="#ffffffff"
+        android:gravity="center" 
+        android:id="@+id/new_icon"
+        android:background="@drawable/bg_tab_msg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dip" 
+        android:layout_marginRight="3.0dip" 
+        android:text="新" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />-->
+</RelativeLayout>

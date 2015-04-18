@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/jump_entry"
+    android:background="@drawable/bg_entry" 
+    android:layout_width="80.0dip" 
+    android:layout_height="80.0dip"
+    android:layout_weight="1.0"
+    android:layout_margin="5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView 
+        android:textSize="@dimen/g_text_size_medium" 
+        android:textColor="@color/white" 
+        android:id="@+id/entry_name" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip" 
+        android:text="房产" 
+        android:singleLine="true" />
+    <ImageView 
+        android:id="@+id/entry_icon"
+        android:layout_marginTop="20dp"
+        android:layout_width="46.599976dip"
+        android:layout_height="46.599976dip"
+        android:layout_marginRight="2.0dip" 
+        android:layout_marginBottom="3.0dip" 
+        android:scaleType="fitXY" 
+        android:layout_below="@id/entry_name"
+        android:layout_alignParentRight="true" 
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

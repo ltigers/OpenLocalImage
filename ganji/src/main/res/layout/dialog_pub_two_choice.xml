@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_custom_dialog"
+    android:orientation="vertical">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+        <TextView android:textSize="14.0dip"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@+id/left_text_btn"
+            android:background="@drawable/title_text_button_bg"
+            android:layout_width="54.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:text="取消"
+            android:layout_centerVertical="true"/>
+        <TextView 
+            android:textSize="18.0dip"
+            android:textColor="#ffffffff"
+            android:id="@+id/title_choices" 
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="对话框标题" />
+    </RelativeLayout>
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:id="@+id/two_choices_layout"
+        android:background="#ffffffff" 
+        android:layout_width="fill_parent"
+        android:layout_height="109.0dip">
+        <LinearLayout 
+            android:id="@+id/choice_one_layout"
+            android:background="@drawable/list_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <TextView 
+                android:textSize="16.0dip"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/choice_one_text"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:duplicateParentState="true" 
+                android:layout_width="match_parent" 
+                android:layout_height="match_parent"
+                android:text="对话框选项item1" />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/choice_two_layout" 
+            android:background="@drawable/list_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:paddingBottom="-2dp">
+            <TextView 
+                android:textSize="16.0dip"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/choice_two_text" 
+                android:paddingLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:duplicateParentState="true" 
+                android:layout_width="match_parent" 
+                android:layout_height="match_parent"
+                android:text="对话框选项item2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
